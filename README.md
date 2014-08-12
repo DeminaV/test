@@ -1,4 +1,4 @@
-SLCF Boilerplate
+Test
 ====================
 
 File structure for SLCF-projects.
