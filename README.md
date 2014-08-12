@@ -1,6 +1,6 @@
 Test test
 ====================
 
-File structure for SLCF-projects.
+File structure for SLCF-projects.sd fsd fsd fsd
 
 [About SLCF (RU)](https://github.com/bivihoba/slcf-docs)
