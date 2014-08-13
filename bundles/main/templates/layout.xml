@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?><templates xmlns:a="http://slcf/templates/settings/bem-scheme/additional" xmlns:b="http://slcf/templates/settings/bem-scheme/block" xmlns:d="http://slcf/templates/settings/bem-scheme/data" xmlns:e="http://slcf/templates/settings/bem-scheme/element" xmlns:p="http://slcf/templates/settings/bem-scheme/pointer" xmlns:m="http://slcf/templates/settings/bem-scheme/modification" xmlns:t="http://slcf/templates/settings/bem-scheme/template" xmlns:x="http://slcf/templates/settings/bem-scheme/xhtml" xmlns:alxc="http://slcf/templates/settings/bem-scheme/additional-legacy-xhtml-class">
+
+	<t:layout>
+		<p:xdocument>
+			<p:page/>
+		</p:xdocument>
+	</t:layout>
+
+	<t:page>
+		<b:page>
+			<b:wrap>
+				<b:main>
+					<p:header/>
+					<b:content>
+						<p:main-content/>
+					</b:content>
+				</b:main>
+			</b:wrap>
+			<p:footer/>
+		</b:page>
+	</t:page>
+
+</templates>

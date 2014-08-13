@@ -2,8 +2,83 @@
 
 	<t:header>
 		<b:header>
-			Bla
+			<e:content>
+				<b:icon>
+					<m:type val="menu-hide"/>
+				</b:icon>
+				<b:icon>
+					<m:type val="menu"/>
+				</b:icon>
+				<b:logo tag="a" x:href="#" x:title=""/>
+				<b:menu tag="ul">
+					<m:type val="header"/>
+				    <e:item>
+					    <b:link tag="a" x:href="#">
+					        О нас
+					        <m:state val="active"/>
+					    </b:link>
+				    </e:item>
+				    <e:item>
+					    <b:link tag="a" x:href="#">
+					        О вас
+					    </b:link>
+				    </e:item>
+				    <e:item>
+					    <b:link tag="a" x:href="#">
+					        Про газ
+					    </b:link>
+				    </e:item>
+				    <e:item>
+					    <b:link tag="a" x:href="#">
+					        Про бенз
+					    </b:link>
+				    </e:item>
+				    <e:item>
+					    <b:link tag="a" x:href="#">
+					        Про шашлы
+					    </b:link>
+				    </e:item>
+				</b:menu>
+			</e:content>
 		</b:header>
 	</t:header>
+	<t:footer>
+		<b:footer>
+			<e:content>
+				<b:menu tag="ul">
+					<m:type val="footer"/>
+				    <e:item>
+					    <b:link tag="a" x:href="#">
+					        О нас
+					        <m:state val="active"/>
+					    </b:link>
+				    </e:item>
+				    <e:item>
+					    <b:link tag="a" x:href="#">
+					        О вас
+					    </b:link>
+				    </e:item>
+				    <e:item>
+					    <b:link tag="a" x:href="#">
+					        Про газ
+					    </b:link>
+				    </e:item>
+				    <e:item>
+					    <b:link tag="a" x:href="#">
+					        Про бенз
+					    </b:link>
+				    </e:item>
+				    <e:item>
+					    <b:link tag="a" x:href="#">
+					        Про шашлы
+					    </b:link>
+				    </e:item>
+				</b:menu>
+				<e:softline>
+					Made in Softline
+				</e:softline>
+			</e:content>
+		</b:footer>
+	</t:footer>
 
 </templates>

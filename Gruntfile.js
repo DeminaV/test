@@ -62,4 +62,6 @@ module.exports = function(grunt) {
 	grunt.registerTask(
 		'default', [ 'buildProjectProduction' ]			// Дефолтной таской собираем production.
 	);
+
+	grunt.loadNpmTasks('grunt-livereload');
 };
