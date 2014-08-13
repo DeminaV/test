@@ -6,7 +6,7 @@
 		<p:xmeta/>
 		<e:title><p:xtitle>Page Title</p:xtitle></e:title>
 
-		<cdata><![CDATA[<script type="text/javascript">document.documentElement.id = "js";</script>]]></cdata>
+		<cdata><![CDATA[<script type="text/javascript">document.documentElement.id = "js";</script><meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" name="viewport">]]></cdata>
 
 		<b:xlink><m:favicon/></b:xlink>
 		<p:xstyles/><p:javascript_head/>
