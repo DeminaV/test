@@ -11,9 +11,6 @@ body,
 .b-page {
   height: 100%;
 }
-.b-page {
-  overflow: hidden;
-}
 .clearfix {
   zoom: 1;
 }
