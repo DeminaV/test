@@ -1,18 +1,21 @@
 $(document).ready(function() {
-	var menu = $(".b-header .b-menu"),
+	var main = $(".b-main"),
 		iconMenu = $(".b-icon_type_menu"),
 		iconMenuHide = $(".b-icon_type_menu-hide");
 		iconMenu.click(function() {
-			menu.css("left", 0);
+			main.width(main.width());
+			main.css("margin-left", 200);
 			iconMenuHide.stop().fadeIn();
 		});
-		iconMenuHide.click(function() {
-			menu.css("left", -200);
+		iconMenuHide.click( function() {
+			main.css("margin-left", 0);
 			iconMenuHide.stop().fadeOut();
 		});
 	$(window).resize(function() {
-		if($(window).width() > 500) 
-			menu.css("left", -200);
+		if($(window).width() > 500) {
+			main.width("auto");
+			main.css("margin-left", 0);
 			iconMenuHide.stop().fadeOut();
+		}
 	});
 });

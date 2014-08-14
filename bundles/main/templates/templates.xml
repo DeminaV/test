@@ -4,14 +4,16 @@
 		<b:header>
 			<e:content>
 				<b:icon>
-					<m:type val="menu-hide"/>
-				</b:icon>
-				<b:icon>
 					<m:type val="menu"/>
 				</b:icon>
 				<b:logo tag="a" x:href="#" x:title=""/>
 				<b:menu tag="ul">
 					<m:type val="header"/>
+					<e:item>
+						<b:icon>
+							<m:type val="menu-hide"/>
+						</b:icon>
+					</e:item>
 				    <e:item>
 					    <b:link tag="a" x:href="#">
 					        О нас
