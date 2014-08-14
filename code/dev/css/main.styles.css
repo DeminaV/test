@@ -114,6 +114,7 @@ h4 {
 .b-icon_type_menu-hide {
   width: 30px;
   height: 30px;
+  margin-top: 15px;
   background: url(../images/strelka.png);
   background-size: 100% 100%;
   opacity: .6;
@@ -181,11 +182,15 @@ h4 {
 .b-menu_type_header .b-link {
   font-size: 20px;
 }
+.b-menu_type_header .b-logo {
+  display: none;
+}
 .b-menu_type_footer {
   margin-bottom: 10px;
 }
 .b-wrap {
   min-height: 100%;
+  overflow: hidden;
 }
 @media (min-width: 0) and (max-width: 500px) {
   .b-header .b-logo {
@@ -203,8 +208,8 @@ h4 {
     position: absolute;
     z-index: 10;
     top: 0;
-    left: -200px;
-    width: 200px;
+    right: 100%;
+    width: 100%;
     background: #fff;
     border-right: 1px solid #000;
     height: 100%;
@@ -226,11 +231,18 @@ h4 {
     background: #eee;
     text-decoration: none;
   }
+  .b-header .b-menu__item .b-logo {
+    display: block;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
   .b-header .b-menu__item:first-child {
     zoom: 1;
-    padding: 35px 20px 0 0;
+    padding: 20px 20px;
     height: 101px;
-    line-height: 100px;
     background: #eee;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

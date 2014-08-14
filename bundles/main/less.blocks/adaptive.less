@@ -19,8 +19,8 @@
 			position: absolute;
 			z-index: 10;
 			top: 0;
-			left: -200px;
-			width: 200px;
+			right: 100%;
+			width: 100%;
 			background: #fff;
 			border-right: 1px solid #000;
 			height: 100%;
@@ -37,11 +37,15 @@
 					background: #eee;
 					text-decoration: none;
 				}
+				.b-logo {
+					display: block;
+					opacity: 0;
+					.transition(opacity .3s ease);
+				}
 				&:first-child {
 					.clearfix();
-					padding: 35px 20px 0 0;
+					padding: 20px 20px;
 					height: 101px;
-					line-height: 100px;
 					background: #eee;
 					.box-sizing(border-box);
 				}

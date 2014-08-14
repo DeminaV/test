@@ -13,6 +13,7 @@
 						<b:icon>
 							<m:type val="menu-hide"/>
 						</b:icon>
+						<b:logo tag="a" x:href="#" x:title=""/>
 					</e:item>
 				    <e:item>
 					    <b:link tag="a" x:href="#">

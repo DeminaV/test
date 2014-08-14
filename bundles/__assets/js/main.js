@@ -1,21 +1,39 @@
 $(document).ready(function() {
-	var main = $(".b-main"),
+	var menu = $(".b-header .b-menu"),
+		logo = $(".b-menu .b-logo"),
+		main = $(".b-main"),
 		iconMenu = $(".b-icon_type_menu"),
 		iconMenuHide = $(".b-icon_type_menu-hide");
-		iconMenu.click(function() {
-			main.width(main.width());
-			main.css("margin-left", 200);
-			iconMenuHide.stop().fadeIn();
+
+	iconMenu.click(function() {
+		main.width(main.width());
+		main.css("margin-left", main.width());
+		menu.addClass("visible");
+		iconMenuHide.stop().fadeIn(function() {
+			logo.css("opacity", 1);
 		});
-		iconMenuHide.click( function() {
-			main.css("margin-left", 0);
-			iconMenuHide.stop().fadeOut();
+	});
+
+	var menuHide = function() {
+		menu.removeClass("visible");
+		main.css("margin-left", 0);
+		iconMenuHide.stop().fadeOut(function() {
+			logo.css("opacity", 0);
 		});
+	}
+
+	iconMenuHide.click( function() {
+		menuHide();
+	});
+
 	$(window).resize(function() {
-		if($(window).width() > 500) {
+		var width = $(window).width();
+		if(menu.hasClass("visible")) {
+			main.css("margin-left", main.width());
+		}
+		if(width > 320) {
 			main.width("auto");
-			main.css("margin-left", 0);
-			iconMenuHide.stop().fadeOut();
+			menuHide();
 		}
 	});
 });
